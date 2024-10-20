@@ -7,6 +7,8 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Header from './components/Header'
 import Logo from '/favicon.ico'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, Bounce } from 'react-toastify';
 
 
 function App() {
@@ -24,6 +26,19 @@ function App() {
           <Route path='sign-up' element={<SignUp/>}/>
         </Routes>
       </Router>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+        />
     </>
   )
 }
