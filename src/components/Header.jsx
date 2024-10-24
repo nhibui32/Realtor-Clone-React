@@ -24,7 +24,7 @@ export default function Header() {
     }
   }
   return (
-    <div className='bg-white border-b shadow-sm sticky top-0 z-50'>
+    <div className='bg-white border-b shadow-sm sticky top-0 z-40'>
       {/* position: sticky it means stay as some where, and the say where it will stay. z-50 ( z index of everything, if z-0 on the top, z--1 go under, z-50 just to make sure it always be on top) */}
       <header className='flex justify-between items-center px-3 max-w-6x1 mx-auto'>
         <div>
