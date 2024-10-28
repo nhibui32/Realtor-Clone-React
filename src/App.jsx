@@ -7,6 +7,7 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Header from './components/Header'
 import PrivateRoute from './components/privateRoute'
+import CreateListing from './pages/CreateListing'
 import Logo from '/favicon.ico'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, Bounce } from 'react-toastify';
@@ -26,6 +27,7 @@ function App() {
           </Route>
           <Route path='forgot-password' element={<ForgotPassword/>}/>
           <Route path='offers' element={<Offers/>}/>
+          <Route path='create-listing' element={<CreateListing/>}/>
           <Route path='sign-in' element={<SignIn/>}/>
           <Route path='sign-up' element={<SignUp/>}/>
         </Routes>
